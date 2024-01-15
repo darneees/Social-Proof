@@ -3,12 +3,13 @@
 document.getElementById('newsletterForm').addEventListener('submit', function (event) {
     event.preventDefault();
 
-    var emailValue = document.getElementById('email').ariaValueMax;
+    var emailValue = document.getElementById('email').value;
 
     setTimeout(function () {
         alert('Um email de confirmação será enviado em breve para ' + emailValue);
         document.getElementById('email').value = '';
-    }, 4000);
+
+    }, 2000);
 });
 
 
